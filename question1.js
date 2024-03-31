@@ -1,18 +1,21 @@
 
 
-function swapCase(str) {
-    return str
-      .split("").map((char) =>
-        /[a-z]/.test(char)
-          ? char.toUpperCase()
-          : /[A-Z]/.test(char)
-          ? char.toLowerCase()
-          : char
-      )
-      .join("");
-  }
+function swapCase(text) {
   
-  // Example usage
-  const inputString = "The Quick Brown Fox";
-  const swappedString = swapCase(inputString);
-  console.log(swappedString); // Output: "tHE qUICK bROWN fOX"
+  let newString = "";
+  for (let char of text) {
+    if (char === char.toUpperCase()) {
+      // If the character is uppercase, convert it to lowercase
+      newString += char.toLowerCase();
+    } else {
+      // If the character is lowercase, convert it to uppercase
+      newString += char.toUpperCase();
+    }
+  }
+  return newString;
+}
+
+// Output
+const text = "The Quick Brown Fox";
+const swappedText = swapCase(text);
+console.log(swappedText); // Output: "tHE qUICK bROWN fOX"

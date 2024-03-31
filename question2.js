@@ -1,14 +1,23 @@
 
 
+function getArray(start, end) {
+ 
+  if (start > end) {
+    const numbers = [];
+    for (let num = end; num <= start; num++) {
+      numbers.push(num);
+    }
+    return numbers;
+  } else {
+    const numbers = [];
+    for (let num = start; num <= end; num++) {
 
-
-function generateArray(start, end) {
-  const arr = [];
-  for (let i = start; i <= end; i++) {
-    arr.push(i);
+      numbers.push(num);
+    }
+    return numbers;
   }
-  return arr;
 }
 
-console.log(generateArray(4, 7)); // Output: [4, 5, 6, 7]
-console.log(generateArray(-4, 7)); // Output: [-4, -3, -2, -1, 0, 1, 2,
+// Output:
+console.log(getArray(4, 7)); 
+console.log(getArray(-4, 7)); 
