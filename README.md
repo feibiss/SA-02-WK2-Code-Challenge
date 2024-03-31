@@ -1,4 +1,4 @@
-## SA.02-WK2-Code-Challenge
+# SA.02-WK2-Code-Challenge
 
 #### Date, 2024/03/31
 
@@ -26,22 +26,3 @@ Javascript
 The content of this site is licensed under the MIT license
 Copyright (c) 2018.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# SA-02-WK2-Code-Challenge
